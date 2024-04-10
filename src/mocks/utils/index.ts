@@ -1,0 +1,1 @@
+export { getRandomItemFromRepository } from './getRandomItemFromRepository';

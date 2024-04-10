@@ -1,0 +1,36 @@
+.weather-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-type-image {
+  width: 40px;
+  height: 40px;
+}
+
+.button-icon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.delete-icon {
+  transition: 0.2s;
+  color: var(--pink-500);
+  outline: none;
+
+  @include hover {
+    color: var(--pink-700);
+  }
+}
+
+.edit-icon {
+  transition: 0.2s;
+  color: var(--cyan-500);
+  outline: none;
+
+  @include hover {
+    color: var(--cyan-700);
+  }
+}

@@ -1,0 +1,8 @@
+.app {
+  @include container;
+}
+
+.app-top {
+  display: flex;
+  align-items: center;
+}

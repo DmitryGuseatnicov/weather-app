@@ -1,0 +1,1 @@
+export { getRelativeDayDifferenceToday } from './getRelativeDayDifferenceToday';

@@ -1,0 +1,13 @@
+@mixin container() {
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
