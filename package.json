@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
     "preview": "vite preview",
-    "test": "vitest"
+    "cypress": "cypress open --component",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@kbox-labs/react-echarts": "^1.0.4",
