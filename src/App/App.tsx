@@ -11,7 +11,7 @@ import styles from './App.module.scss';
 
 const cx = cnBind.bind(styles);
 export const App = () => {
-  const { data: weatherDate, isLoading } = useGetWeatherNoteListQuery({});
+  const { data: weatherDate } = useGetWeatherNoteListQuery({});
 
   const [filterWeatherTableValue, setfilterWeatherTableValue] = useState<WeatherTableValue[]>([]);
 
@@ -25,7 +25,9 @@ export const App = () => {
       <div className={cx('app-top')}>
         <h1>Дневник погоды</h1>
         {weatherTableValue.length && (
-          <WeatherChart weatherNoteList={filterWeatherTableValue.length ? filterWeatherTableValue : weatherTableValue.slice(0, 7)} />
+          <WeatherChart
+            weatherNoteList={filterWeatherTableValue.length ? filterWeatherTableValue : weatherTableValue.slice(0, 7)} 
+          />
         )}
       </div>
       <WeatherTable

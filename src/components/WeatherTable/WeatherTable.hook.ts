@@ -21,10 +21,10 @@ export const useDeleteWeatherNoteLogic = () => {
   const handleAccept = async (selection?: WeatherTableValue[], onSuccess?: (ids: number[]) => void) => {
     try {
       await deleteProducts({ ids: selection?.map((item) => item.id) ?? [] });
-      showToast(toastMessageCreator.success(DELETE_HEATHER_NOTES_SUCCESS));
+      showToast?.(toastMessageCreator.success(DELETE_HEATHER_NOTES_SUCCESS));
       onSuccess?.(selection?.map((item) => item.id) ?? []);
     } catch (error) {
-      showToast(toastMessageCreator.error(DELETE_HEATHER_NOTES_ERROR));
+      showToast?.(toastMessageCreator.error(DELETE_HEATHER_NOTES_ERROR));
     }
   };
 
