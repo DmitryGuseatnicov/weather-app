@@ -5,6 +5,7 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/weather-app/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

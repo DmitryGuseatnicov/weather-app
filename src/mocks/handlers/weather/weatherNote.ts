@@ -12,7 +12,7 @@ import { weatherTypeRepository } from './weatherType';
 
 import type { WeatherNoteDBEntity } from './weather.types';
 
-const BASE_PATH = '/weather-note';
+const BASE_PATH = '/weather-app/weather-note';
 
 const WEATHER_NONE_LIST = Array.from({ length: 360 }, (_, index) => ({
   id: index + 1,

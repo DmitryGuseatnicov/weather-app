@@ -41,7 +41,7 @@ WEATHER_TYPES_NAMES.map((item, index) => weatherTypeRepository.set(
   index + 1, { id: index + 1, name: item.name, image: item.image },
 ));
 
-const BASE_PATH = '/weather-type';
+const BASE_PATH = '/weather-app/weather-type';
 
 export const weatherTypeHandlers = [
   http.get(BASE_PATH, () => {

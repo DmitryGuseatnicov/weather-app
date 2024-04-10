@@ -17,7 +17,10 @@ async function enableMocking() {
 
   return worker.start({
     serviceWorker: {
-      url: '/mockServiceWorker.js',
+      url: '/weather-app/mockServiceWorker.js',
+      options: {
+        scope: '/weather-app/',
+      },
     },
   });
 }

@@ -4,7 +4,7 @@ import type { CreateWeatherNodeData, WeatherNote, WeatherType } from './weather.
 
 export const weatherApi = createApi({
   reducerPath: 'weatherApi',
-  baseQuery: fetchBaseQuery({ baseUrl: '/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: '/weather-app' }),
   tagTypes: ['WeatherHone'],
   endpoints: (builder) => ({
     getWeatherNoteList: builder.query<WeatherNote[], { from?: string; to?: string } | undefined>({

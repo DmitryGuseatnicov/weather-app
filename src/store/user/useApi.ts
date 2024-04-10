@@ -4,7 +4,7 @@ import type { User } from './user.types';
 
 export const userApi = createApi({
   reducerPath: 'userApi',
-  baseQuery: fetchBaseQuery({ baseUrl: '/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: '/weather-app' }),
   endpoints: (builder) => ({
     getUsers: builder.query<User[], any>({
       query: () => ({ url: '/user' }),

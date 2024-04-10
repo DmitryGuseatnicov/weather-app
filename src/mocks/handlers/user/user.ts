@@ -3,7 +3,7 @@ import { http, HttpResponse } from 'msw';
 
 import type { User } from '@/store';
 
-const BASE_PATH = '/user';
+const BASE_PATH = '/weather-app/user';
 
 const USER_NAME_LIST = [
   'Иванов Иван',
